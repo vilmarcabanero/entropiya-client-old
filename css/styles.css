@@ -1,0 +1,61 @@
+body {font-family: Arial;}
+
+/* Font awsome styles*/
+
+#back-icon-container {
+	padding-left: 12px;
+	padding-top: 15px;
+	padding-bottom: 12px;
+	
+}
+
+#back-icon{
+	color:gray;
+}
+
+#chevron {
+	color:Dodgerblue;
+}
+
+#youtube-play {
+	color:rgb(255, 30, 41);
+}
+
+a:link, .link {
+	text-decoration: none;
+	color: rgb(49, 49, 49);
+}
+
+.collapsible-container {
+	padding: 0px 12px;
+}
+
+.list-container {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.question-container {
+	padding: 0px 12px;
+	color: rgb(49, 49, 49);
+	border: 1px solid #ccc;
+	border-radius: 5px 5px 5px 5px;
+	overflow: auto;
+}
+
+
+.contents-container {
+	padding: 15px 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px 5px 5px 5px;
+	overflow: auto;
+}
+	
+didivv {
+	text-align: justify;
+	text-justify: inter-word;	
+}
+
+
