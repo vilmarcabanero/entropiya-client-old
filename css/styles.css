@@ -1,8 +1,29 @@
-body {font-family: Arial;}
+html, body {
+	font-family: Arial;
+	overflow-y: visible;
+	overflow-x: visible;
+	scroll-behavior: auto;
+	font-size: medium;
+}
+
+.body-container {
+	overflow-y: visible;
+	
+}
+
 
 /* Font awsome styles*/
 
 #back-icon-container {
+	padding-left: 1px;
+	padding-top: 15px;
+	padding-bottom: 12px;
+	
+}
+
+#next-icon-container {
+	position: absolute;
+	right: 50px;
 	padding-left: 12px;
 	padding-top: 15px;
 	padding-bottom: 12px;
@@ -10,7 +31,7 @@ body {font-family: Arial;}
 }
 
 #back-icon{
-	color:gray;
+	color:Dodgerblue;
 }
 
 #chevron {
@@ -23,26 +44,71 @@ body {font-family: Arial;}
 
 a:link, .link {
 	text-decoration: none;
-	color: rgb(49, 49, 49);
 }
 
-.collapsible-container {
+a:link {
+	text-align: left;
+	
+
+}
+
+.btn-group-vertical {
+	padding-left: 5px
+}
+
+
+.container {
 	padding: 0px 12px;
 }
+
 
 .list-container {
-	padding-right: 20px;
-	padding-left: 20px;
-}
-
-.question-container {
-	padding: 0px 12px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	margin: 10px;
 	color: rgb(49, 49, 49);
 	border: 1px solid #ccc;
 	border-radius: 5px 5px 5px 5px;
 	overflow: auto;
+	box-shadow: 10px 10px 5px #888888;
 }
 
+.tab {
+	padding-left: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	border-radius: 5px 5px 1px 1px; /*  top-left, top-right , bottom-right, bottom-left*/
+	margin: 10px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	font-size: 17px;
+	color: rgb(0, 0, 0);
+}
+.question-container {
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 10px;
+	margin-top: 0px;
+	margin-bottom: 1px;
+	color: rgb(0, 0, 0);
+	border: 1px solid #ccc;
+	border-radius: 0px 0px 5px 5px;
+	overflow: hidden;
+	box-shadow: 10px 10px 5px #888888;
+} 
+
+.answer-container {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 1px;
+}
 
 .contents-container {
 	padding: 15px 0px;
@@ -52,10 +118,152 @@ a:link, .link {
 	border-radius: 5px 5px 5px 5px;
 	overflow: auto;
 }
-	
-didivv {
+
+.contents-container-mini {
+	margin-left: 12px;
+	margin-right: 12px;
+	border: 1px solid #ccc;
+	border-radius: 5px 5px 5px 5px;
+	overflow: auto;
+}
+
+/*Button up*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:Dodgerblue;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/*Old CSS*/
+/* Style the tab */
+/*.tab {
+			
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	border-radius: 5px 5px 1px 1px; /*  top-left, top-right , bottom-right, bottom-left*/
+/*} */
+
+/* Style the buttons inside the tab */
+.tab button {
+	/*color: #4c4c4c; */
+	color: #000000;
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 8px 12px;
+	transition: 0.3s;
+	font-size: 17px;
+}
+
+/* Style the back to tap link inside the tab */
+.back-to-top {	
+	/*color: #4c4c4c; */
+	color: #000000;
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 8px 12px;
+	transition: 0.3s;
+	font-size: 17px;
+}
+
+
+/* Create an active/current tablink class */
+.tab button.active {
+	background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+	/* color: #333333; */
+	color: #000000;
+	display: none;
+	padding: 0px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+	border-radius: 1px 1px 5px 5px;
+	/*height: 150px; */
+	height: 300px;
+	overflow: auto;
+	/* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+	box-shadow: 10px 10px 5px #888888;
+}
+
+
+
+
+div {
 	text-align: justify;
-	text-justify: inter-word;	
+	text-justify: inter-word;
+	
+}
+
+
+a:link {
+	text-decoration: none;
+}
+
+/* Table of contents */
+table {
+	/* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+	box-shadow: 10px 10px 5px #888888;
+
+	border-radius: 5px;
+	border-top: none;
+	border: 1px solid #ccc;
+}
+th, td {
+	border-collapse: collapse;
+	border: 1px solid #f1f1f1;
+	
+	
+}
+th{
+	text-align: left;  
+	color: #4c4c4c;
+	padding: 6px 12px;
+}
+
+td {
+	text-align: left; 
+	width: 60px;
+	padding: 6px 6px;
+}
+
+.chapter-title {
+	width: 100%
+}
+
+.expand {
+	
+	color: #4c4c4c;
+	background-color: #f1f1f1;
+	border-radius: 2px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 1px 3x;
+	transition: 0.3s;
+	font-size: 17px;
 }
 
 
