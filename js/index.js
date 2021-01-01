@@ -51,6 +51,20 @@ $(document).ready(function(){
 			} 
 		});
 	} */
+
+		//Initial
+		$("#button-problem1").css("background-color", "#ddd")
+		$("#button-answer1").css("background-color", "inherit")
+		$("#content-problem1").show()
+		$("#content-answer1").hide()
+			
+		//If clicked
+		$("#math-collapsible").click(function(){
+			$("#button-problem1").css("background-color", "#ddd")
+			$("#button-answer1").css("background-color", "inherit")
+			$("#content-problem1").show()
+			$("#content-answer1").hide()		
+		});
 		
 	
 	//Problem 1
