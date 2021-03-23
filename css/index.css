@@ -424,9 +424,7 @@ width: 100%;
   list-style: none;
   box-sizing: border-box;
 }
-body{
-  /* font-family: montserrat; */
-}
+
 nav{
   background: #0082e6;
   height: 80px;
