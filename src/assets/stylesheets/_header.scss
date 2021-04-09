@@ -1,0 +1,19 @@
+@import "variables";
+
+.header {
+  height: $headerHeight;
+  // border-bottom: 1.5px solid #ECECEC;
+  color: $secondaryColor;
+  display: grid;
+  grid-template-columns: 27% 20% 13% 90px 70px 65px 70px 70px ;
+  align-items: center;
+  min-height: inherit;
+  img {
+    grid-column-start: 2;
+  }
+  
+  #start {
+    grid-column-start: 4;
+  }
+
+}
