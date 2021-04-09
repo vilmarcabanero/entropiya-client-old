@@ -3,9 +3,11 @@
 // Colors
 $borderColor:  #ccc;
 
-$primaryColor: white;
-$secondaryColor: steelblue;
-$tertiaryColor: hsl(0, 0%, 98%);
+$white: white;
+$steelBlue: steelblue;
+$primaryColor: #0082e6;
+$celticBlue: #246BCE;
+
 
 $darkBlue: hsl(233, 26%, 24%);
 $limeGreen: hsl(136, 65%, 51%);
@@ -20,6 +22,8 @@ $font-sm: 0.875rem; // 14px
 $font-med: 1.125rem; // 18px
 $font-lg: 1.25rem;
 $font-xlg: 3.25rem;
+
+$font-a: 1.1rem; 
 
 //Height
 $headerHeight: 70px;
